@@ -12,11 +12,11 @@
         
       }
       .box:after {
-          
+         clear: both;
+         content: "";
+         display: table;
       }
 
-      .clearfix::after {
-      }
 
       .img {
          float: none;
@@ -29,18 +29,22 @@
         display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px 2em;
+  
 }
 
 .box :first-child {
     align-self: center;
       }
       .leftContent {
+        float:left;
       }
 
       .rightContent {
+        float: left;
       }
 
       .bottom {
+        float: left;
       }
     </style>
   </head>
