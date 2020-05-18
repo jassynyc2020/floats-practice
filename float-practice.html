@@ -2,54 +2,60 @@
 <html>
   <head>
     <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
       div {
         border: 3px solid #4caf50;
         box-sizing: border-box;
         padding: 5px;
-        margin: 20px;
-        overflow: hidden;
-
-        
-      }
-      .box:after {
-         clear: both;
-         content: "";
-         display: table;
-      }
-
-
-      .img {
-         float: none;
+        margin: auto;
+        width: 600px;
       }
 
       .box {
         background: lightgreen;
-        width: 200px;
+        width: 180px;
         height: 200px;
-        display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px 2em;
-  
-}
-
-.box :first-child {
-    align-self: center;
+        margin: 7px;
+        text-align: center;
+        font-weight: bold;
+        float: left;
       }
+
+      .box :first-child {
+        align-self: center;      
+      }
+
       .leftContent {
-        float:left;
+        float: left;
       }
 
       .rightContent {
         float: left;
+        width: 400px;
+
+      }
+      .bottom {
+        text-align: center;
+        width: 70%;
+        bottom: 5px;
+        position: fixed;
+       
+        
+        
       }
 
-      .bottom {
-        float: left;
+      .img {
+      float: right;
+      margin-right: 20px;
+   
       }
     </style>
   </head>
   <body>
-    <div class="leftContent clearfix">
+    
+     <div class="leftContent clearfix">
       <div class="box">
         Box
       </div>
@@ -81,11 +87,12 @@
         width="170"
         height="170"
       />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-      imperdiet, nulla et dictum interdum...
+      Lorem ipsum dolor sit amet, consectetur <br> adipiscing. 
+      Phasellus imperdiet,nulla <br> et dictum interdum...
     </div>
     <div class="bottom">
       This should be all the way at the bottom.
     </div>
+
   </body>
 </html>
