@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        border: 3px solid #4caf50;
+        box-sizing: border-box;
+        padding: 5px;
+        margin: 20px;
+        overflow: hidden;
+
+        
+      }
+      .box:after {
+          
+      }
+
+      .clearfix::after {
+      }
+
+      .img {
+         float: none;
+      }
+
+      .box {
+        background: lightgreen;
+        width: 200px;
+        height: 200px;
+        display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px 2em;
+}
+
+.box :first-child {
+    align-self: center;
+      }
+      .leftContent {
+      }
+
+      .rightContent {
+      }
+
+      .bottom {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="leftContent clearfix">
+      <div class="box">
+        Box
+      </div>
+      <div class="box">
+        Box
+      </div>
+      <div class="box">
+        Box
+      </div>
+      <div class="box">
+        Box
+      </div>
+      <div class="box">
+        Box
+      </div>
+      <div class="box">
+        Box
+      </div>
+      <div class="box">
+        Box
+      </div>
+    </div>
+    <div class="rightContent clearfix">
+      <h2>A Title</h2>
+      <img
+        class="img"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pineapple_and_cross_section.jpg/1024px-Pineapple_and_cross_section.jpg"
+        alt="Pineapple"
+        width="170"
+        height="170"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum...
+    </div>
+    <div class="bottom">
+      This should be all the way at the bottom.
+    </div>
+  </body>
+</html>
